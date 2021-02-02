@@ -16,8 +16,124 @@
     }
 }
 
-.text{
-    font-size: 50px;
+.header{
+    background-image: url('../images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 840px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+    &__menu{
+        margin-right: 100px;
+    }
+    &__item{
+        display: flex;
+    }
+    &__items--active{
+        color: #fff;
+        opacity: 1 !important;
+        @extend %inter-700;
+    }
+    &__items{
+        margin-right: 60px;
+        color: #fff;
+        opacity: 0.4;
+        font-size: 15px;
+        line-height: 18px;
+        cursor: pointer;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__signin{
+        margin-right: 42px;
+        color: #262B36;
+        font-size: 13px;
+        line-height: 16px;
+        @extend %inter-700;
+    }
+    &__start{
+        font-size: 13px;
+        line-height: 16px;
+        color: #3ACF6E;
+        @extend %inter-700;
+    }
+}
+
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+    position: relative;
+    &__wrapper{
+        max-width: 600px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 74px;
+        margin-top: 28px;
+        color: #fff;
+        @extend %inter-700;
+        & span{
+            color: #3ACF6E;
+        }
+    }
+    &__text{
+        margin-top: 30px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 32px;
+        @extend %inter-400;
+    }
+    &__btns{
+        margin-top: 60px;
+    }
+    &__btn-start,
+    &__btn-learn{
+        padding: 15px 28px;
+        border-radius: 5px;
+        color: #fff;
+        @extend %inter-700;
+        font-size: 15px;
+        line-height: 18px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    &__btn-start{
+        background-color: #3ACF6E;
+        margin-right: 20px;
+        &:hover{
+            background-color: #00af3d;
+        }
+    }
+    &__btn-learn{
+        border: 1px solid #fff;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.26);
+        }
+    }
+    &__inner-img{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/header-2.png');
+            object-fit: cover;
+            width: 397px;
+            height: 256px;
+            left: 160px;
+            top: 444px;
+        }
+    }
 }
 
 
