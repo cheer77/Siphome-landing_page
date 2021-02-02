@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    @extend %inter-400;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8px 0 8px;
+}
+
+
+.title {
+
+}
+

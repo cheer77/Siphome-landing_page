@@ -1,0 +1,53 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'media';
+@import 'global';
+
+
+
+.mobile{
+    &__btn{
+        display: none;
+        padding: 10px 19px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+    }
+}
+
+.text{
+    font-size: 50px;
+}
+
+
+
+
+
+
+@import 'media';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

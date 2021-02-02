@@ -1,0 +1,36 @@
+// $header: #436372;
+// $hover: #a3bbc8;
+// $footer:#7b7b7b;
+// $title:#191919;
+// $border:#f6f6f6;
+
+%inter-400 {
+    font-family: 'Inter-Regular';
+    font-weight: 400;
+}
+
+%inter-500 {
+    font-family: 'Inter-Medium';
+    font-weight: 500;
+}
+
+%inter-600 {
+    font-family: 'Inter-SemiBold';
+    font-weight: 600;
+}
+
+%inter-700 {
+    font-family: 'Inter-Bold';
+    font-weight: 700;
+}
+
+
+
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
