@@ -1,0 +1,64 @@
+
+@media(max-width:833px){
+    .container{
+        max-width: 640px;
+    }
+    .mobile{
+        display: block;
+        &__btn{
+            
+        }
+    }
+    .header-top{
+        display: block;
+        position: relative;
+        &__inner-img{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__menu{
+            background-color: #fff;
+            right: -100px;
+            position: fixed;
+            min-height: 80%;
+            max-width: 100%;
+            width: 100%;
+            z-index: 3;
+            top: -800px;
+        }
+        .active{
+            top: 0;
+        }
+        &__item{
+            display: block;
+            text-align: center;
+            margin-top: 150px;
+            
+        }
+        &__items{
+            margin-right: 0;
+            margin-bottom: 40px;
+            color: #2053D1;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:first-child{
+                margin-top: 150px;
+            }
+        }
+        &__login-mob{
+            display: block;
+            text-align: center;
+        }
+        &__login{
+            display: none;
+        }
+    }
+
+
+    .header-content{
+        &__inner-img{
+            display: none;
+        }
+    }
+}

@@ -1,6 +1,16 @@
 $(function () {
 
 
+    $('.mobile__btn').on('click', function (event) {
+        $('.mobile__btn, .header-top__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
+    $('.singin, .login__close').on('click', function (event) {
+        $('.login').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+
 
 
     var header = document.getElementById("menu");

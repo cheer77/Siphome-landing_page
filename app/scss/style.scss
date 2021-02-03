@@ -8,18 +8,20 @@
 
 
 .mobile{
+    display: none;
     &__btn{
-        display: none;
         padding: 10px 19px;
         border: 1px solid #ffffff;
+        color: #fff;
         border-radius: 5px;
+        cursor: pointer;
     }
 }
 
 .header{
     background-image: url('../images/header-bg.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 840px;
     max-width: 100%;
     object-fit: cover;
@@ -51,6 +53,9 @@
         &:last-child{
             margin-right: 0;
         }
+    }
+    &__login-mob{
+        display: none;
     }
     &__signin{
         margin-right: 42px;
