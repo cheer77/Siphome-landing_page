@@ -13,7 +13,24 @@
         padding: 10px 19px;
         border: 1px solid #ffffff;
         color: #fff;
+        font-size: 13px;
+        line-height: 16px;
         border-radius: 5px;
+        @extend %inter-700;
+        cursor: pointer;
+    }
+}
+
+.mobile-close{
+    display: none;
+    &__btn{
+        padding: 10px 19px;
+        border: 1px solid #FA4949;
+        color: #FA4949;
+        border-radius: 5px;
+        font-size: 13px;
+        line-height: 16px;
+        @extend %inter-700;
         cursor: pointer;
     }
 }
@@ -38,6 +55,13 @@
     &__item{
         display: flex;
     }
+    &__text-title{
+        display: none;
+        font-size: 20px;
+        line-height: 24px;
+        color: #262B36;
+        @extend %inter-700;
+    }
     &__items--active{
         color: #fff;
         opacity: 1 !important;
@@ -54,9 +78,37 @@
             margin-right: 0;
         }
     }
+
     &__login-mob{
         display: none;
     }
+
+    &__start-mob{
+        margin-right: 20px;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 15px 28px;
+        width: 100%;
+        background-color: #3ACF6E;
+        color: #fff;
+        border-radius: 5px;
+        line-height: 18px;
+        font-size: 15px;
+        @extend %inter-700;
+    }
+    &__signin-mob{
+        font-size: 15px;
+        line-height: 18px;
+        padding: 15px 45px;
+        border: 1px solid #3ACF6E;
+        border-radius: 5px;
+        color: #3ACF6E;
+        font-size: 15px;
+        line-height: 18px;
+        @extend %inter-700;
+    }
+
+
     &__signin{
         margin-right: 42px;
         color: #262B36;

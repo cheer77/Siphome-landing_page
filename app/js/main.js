@@ -6,11 +6,6 @@ $(function () {
         $('body').toggleClass('lock');
     });
 
-    $('.singin, .login__close').on('click', function (event) {
-        $('.login').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-
 
 
     var header = document.getElementById("menu");

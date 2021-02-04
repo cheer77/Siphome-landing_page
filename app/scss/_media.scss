@@ -1,14 +1,10 @@
 
 @media(max-width:833px){
+
     .container{
         max-width: 640px;
     }
-    .mobile{
-        display: block;
-        &__btn{
-            
-        }
-    }
+
     .header-top{
         display: block;
         position: relative;
@@ -19,16 +15,27 @@
         &__menu{
             background-color: #fff;
             right: -100px;
+            position: relative;
             position: fixed;
-            min-height: 80%;
+            min-height: 612px;
             max-width: 100%;
             width: 100%;
             z-index: 3;
-            top: -800px;
+            top: -1000px;
+            transition: all .9s;
+        }
+        &__text-title{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 44px;
+            margin-left: 30px;
         }
         .active{
             top: 0;
         }
+
         &__item{
             display: block;
             text-align: center;
@@ -49,16 +56,36 @@
         &__login-mob{
             display: block;
             text-align: center;
+            margin-top: 50px;
         }
         &__login{
             display: none;
         }
     }
 
+    .mobile{
+        display: block;
+        position: relative;
+    }
+    .mobile-close{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        top: 0;
+        margin-top: 44px;
+    }
+
 
     .header-content{
         &__inner-img{
             display: none;
+        }
+        &__wrapper{
+            max-width: 100%;
+        }
+        &__btns{
+            text-align: center;
         }
     }
 }
