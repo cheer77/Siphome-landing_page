@@ -1,6 +1,9 @@
 
 @media(max-width:833px){
 
+    .header{
+        min-height: 740px;
+    }
     .container{
         max-width: 640px;
     }
@@ -87,5 +90,17 @@
         &__btns{
             text-align: center;
         }
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }
+
+
+
+
+
