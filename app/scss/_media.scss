@@ -32,7 +32,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            margin-top: 44px;
+            margin-top: 51px;
             margin-left: 30px;
         }
         .active{
@@ -96,6 +96,115 @@
         &__text{
             font-size: 18px;
             line-height: 30px;
+        }
+    }
+
+
+    .footer{
+        .footer-inner{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3vw;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 10px;
+        }
+        .footer-address{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            width: 100%;
+            max-width: 640px;
+        }
+        .footer-copy{
+            margin-top: 46px;
+        }
+    }
+}
+
+@media(max-width:450px){
+    .container{
+        max-width: 325px;
+    }
+
+    .header{
+        background-image: url('../images/header-bg-mb.png');
+        min-height: 840px;
+    }
+    .header-content{
+        &__title{
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 50px;
+            margin-top: 28px;
+        }
+        &__text{
+            margin-top: 36px;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+        &__btns{
+            margin-top: 48px;
+        }
+        &__btn-start{
+            margin-right: 10px;
+        }
+    }
+
+    .footer{
+        .footer-inner{
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+        .footer-address{
+            margin-bottom: 60px;
+            &__img{
+                margin: 15px auto 40px;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                border-bottom: 1px solid #262b361e;
+                width: 200px;
+                top: 350px;
+                left: 50px;
+            }
+        }
+        .footer-nav,
+        .footer-about,
+        .footer-connect{
+            margin: 0 auto 36px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        .footer-copy{
+            margin-top: 46px;
+        }
+
+        .footer-connect{
+            &__item{
+                padding-left: 40px;
+            }
+            &__item--facebook{
+                &::before{
+                    left: 42px;
+                    top: 48px;
+                }
+            }
+            &__item--twitter{
+                &::before{
+                    left: 42px;
+                    top: 98px;
+                }
+            }
+            &__item--insta{
+                &::before{
+                    left:42px;
+                    top: 140px;
+                }
+            }
         }
     }
 }
