@@ -1,12 +1,17 @@
 
 @media(max-width:833px){
 
+    body.lock{
+        overflow: hidden;
+    }
+
     .header{
         min-height: 740px;
     }
     .container{
         max-width: 640px;
     }
+
 
     .header-top{
         display: block;
@@ -129,6 +134,11 @@
     .header{
         background-image: url('../images/header-bg-mb.png');
         min-height: 840px;
+    }
+    .header-top{
+        &__menu{
+            min-height: 550px;
+        }
     }
     .header-content{
         &__title{

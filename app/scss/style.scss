@@ -189,9 +189,140 @@
             height: 256px;
             left: 160px;
             top: 444px;
+            z-index: 2;
         }
     }
 }
+
+
+
+
+// descr text 
+.descr{
+    margin: 187px 0 127px;
+    position: relative;
+    &__text{
+        max-width: 960px;
+        font-style: italic;
+        @extend %inter-500;
+        font-size: 20px;
+        line-height: 32px;
+        color: #606B86;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/dots-bg.svg');
+        height: 348px;
+        width: 241px;
+        top: -229px;
+        right: 0;
+        z-index: 1;
+    }
+}
+// descr text -- end
+
+
+
+// Section Feature
+.feature{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        margin-top: 74px;
+        object-fit: cover;
+        width: 457px;
+        height: 457px;
+    }
+}
+
+.feature-wrapper{
+    max-width: 678px;
+    &__descr{
+        margin-bottom: 152px;
+        max-width: 550px;
+    }
+    &__subtitle{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #2053D1;
+        @extend %inter-700;
+    }
+    &__title{
+        font-size: 42px;
+        line-height: 51px;      
+        color: #262B36;
+        @extend %inter-700;  
+        margin-top: 20px;     
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 28px;
+        color: #606B86;
+        margin-top: 24px;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: 300px 320px;
+        grid-gap: 130px;
+        
+    }
+    &__item-auto,
+    &__item-smart,
+    &__item-prevention,
+    &__item-serv{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            left: 0;
+            top: -80px;
+        }
+    }
+    &__item-auto{
+        &::before{
+            background-image: url('../images/icons/auto.svg');
+        }    
+    }
+    &__item-smart{
+        &::before{
+            background-image: url('../images/icons/smart.svg');
+        }
+    }
+    &__item-prevention{
+        &::before{
+            background-image: url('../images/icons/prevention.svg');
+        }
+    }
+    &__item-serv{
+        &::before{
+            background-image: url('../images/icons/serv.svg');
+        }
+    }
+
+    &__item-title{
+        font-size: 18px;
+        line-height: 22px;
+        color: #262B36;
+        @extend %inter-600;
+    }
+    &__item-text{
+        margin-top: 12px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #606B86;
+    }
+}
+// Section Feature -- end
+
+
+
 
 .footer{
     min-height: 547px;
