@@ -7,6 +7,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) -9.97%, #ECF0F7 100%);
     @extend %inter-400;
 }
 

@@ -267,8 +267,8 @@
     }
     &__items{
         display: grid;
-        grid-template-columns: 300px 320px;
-        grid-gap: 130px;
+        grid-template-columns: 300px 280px;
+        grid-gap: 100px;
         
     }
     &__item-auto,
@@ -322,7 +322,205 @@
 // Section Feature -- end
 
 
+// Section Update
 
+.update{
+    min-height: auto;
+    margin-top: 230px;
+    .update-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__starts-descr{
+        margin-top: 48px;
+    }
+    &__starts-subtitle{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: #2053D1;
+        @extend %inter-700;
+    }
+    &__starts-title{
+        font-size: 42px;
+        line-height: 64px;
+        color: #262B36;
+        @extend %inter-700;
+    }
+    &__starts-photo{
+        position: relative;
+    }
+    &__starts-img1{
+        margin-left: 240px;
+        margin-top: 123px;
+        object-fit: cover;
+    }
+    &__starts-img3{
+        position: absolute;
+        object-fit: cover;
+        top: -66px;
+        left: -120px;    
+    }
+    &__starts-img2{
+        position: absolute;
+        object-fit: cover;
+        top: 236px;
+        left: -120px;
+    }
+    &__advan{
+        max-width: 760px;
+        min-height: 1103px;
+        width: 100%;
+        background-image: url('../images/update-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__advant-wrapper{
+        margin-top: 117px;
+        margin: 104px 0 181px 310px;
+    }
+    &__advant-items{
+        max-width: 444px;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-left: 95px;
+        padding-top: 13px;
+        position: relative;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__advant-items-monitor{
+        &::before{
+            background-image: url('../images/icons/monitor.svg');
+        }
+    }
+
+    &__advant-items-maintenance{
+        &::before{
+            background-image: url('../images/icons/maintenance.svg');
+        }
+    }
+
+    &__advant-items-repair{
+        &::before{
+            background-image: url('../images/icons/repair.svg');
+        }
+    }
+
+    &__advant-items-replace{
+        &::before{
+            background-image: url('../images/icons/replaice.svg');
+        }
+    }
+
+    &__advant-title{
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 11px;
+        color: #fff;
+        @extend %inter-600;
+    }
+    &__advant-text{
+        font-size: 15px;
+        line-height: 24px;      
+        color: #FFFFFF;
+    }
+}
+
+// Section Update -- end
+
+
+
+// Section Sevice
+
+.service{
+    margin: 164px 0 216px;
+    &__descr{
+        text-align: center;
+        margin-bottom: 96px;
+    }
+    &__descr-subtitle{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        @extend %inter-700;
+        margin-bottom: 17px;
+        color: #2053D1;
+    }
+    &__descr-title{
+        font-size: 42px;
+        line-height: 64px;
+        color: #262B36;
+    }
+    &__descr-text{
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 28px;
+        color: #606B86;
+        @extend %inter-400;
+    }
+    &__img{
+        margin: 0 auto;
+    }
+    .service-inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 128px;
+        align-items: center;
+        
+    }
+    .service-slider{
+        display: none;
+        flex-wrap: nowrap;
+        min-height: 100px;
+    }
+    &__item--slider{
+        display: flex !important;
+        align-items: center;
+        padding-right: 20px;
+        min-width: 315px;
+        // width: 100%;
+        min-height: 96px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        filter: drop-shadow(4px 14px 14px rgba(0, 0, 0, 0.08));
+        margin-bottom: 36px;
+        margin-left: 30px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        max-width: 360px;
+        width: 100%;
+        min-height: 96px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.08));
+        margin-bottom: 20px;
+    }
+    &__item-img{
+        margin: 0 24px 0;
+    }
+    &__item-title{
+        font-size: 18px;
+        line-height: 32px;
+        color: #262B36;
+    }
+}
+
+// Section Sevice -- end
 
 .footer{
     min-height: 547px;
