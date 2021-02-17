@@ -22,26 +22,35 @@ $(function () {
         dots: true,
         arrows: false,
         speed: 300,
-        // slidesToShow: 2,
+        slidesToShow: 2,
         centerMode: true,
-        centerPadding: '60px',
-        // variableWidth: true
         adaptiveHeight: true,
-        // responsive: [
-        //     {
-        //         breakpoint: 450,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 2,
-        //             infinite: true,
-        //             dots: true
-        //         }
-        //     },
-        // ]
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // prevArrow: '<button class="btn btn__next">Вперед</button>',
-        // nextArrow: '<button class="btn btn__prev">Назад</button>',
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
+    });
+
+    $('.testimonials__inner').slick({
+        slidesToShow: 2,
+        arrows: false,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 833,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+        ]
     });
 
 
