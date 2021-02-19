@@ -251,7 +251,32 @@
     }
     // For Slider two ----- end ----
 
-
+    .contacts{
+        background-color: #fff;
+        padding-bottom: 248px;
+        
+        &__inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 168px;
+        }
+        &__descr{
+            margin-left: 0;
+            text-align: center;
+            max-width: 600px;
+        }
+        &__title{
+            max-width: 600px;
+        }
+        &__img{
+            margin: 50px auto 0;
+        }
+        &__form{
+            margin-right: 0;
+            margin-top: 64px;
+        }
+    }
 
 
     //Content ------>end------------->
@@ -467,12 +492,43 @@
         }
     }
 
+    .contacts{
+        background-color: #fff;
+        padding-bottom: 148px;
+        
+        &__inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 100px;
+        }
+        &__descr{
+            margin-left: 0;
+            text-align: center;
+            max-width: 600px;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__img{
+            margin: 50px auto 0;
+        }
+        &__form{
+            margin-right: 0;
+            margin-top: 64px;
+        }
+    }
+
     .testimonials__wrapper,.slick-slide{
         // margin-left: 68px;
         margin: 0 7px;
         // min-width: 315px;
     }
 
+    .jq-selectbox__select{
+        width: 309px;
+    }
 
         //Content ------>end------------->
 

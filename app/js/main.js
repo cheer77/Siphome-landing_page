@@ -54,5 +54,10 @@ $(function () {
     });
 
 
+    $('input, select').styler({
+
+    });
+
+
 
 });

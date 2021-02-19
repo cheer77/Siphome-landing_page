@@ -648,9 +648,118 @@
 
 
 
+// Section Contacts
+.contacts{
+    background-color: #fff;
+    padding-bottom: 281px;
+    
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 180px;
+    }
+    &__descr{
+        margin-left: 35px;
+        max-width: 420px;
+    }
+    &__subtitle{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        @extend %inter-700;
+        margin-bottom: 17px;
+        color: #2053D1;
+    }
+    &__title{
+        font-size: 42px;
+        line-height: 64px;
+        color: #262B36;
+    }
+    &__form{
+        margin-right: 75px;
+        width: 100%;
+        max-width: 386px;
+    }
+    &__input-inner{
+        margin-bottom: 16px;
+        &:nth-last-child(-n+2){
+            margin-bottom: 36px;
+        }
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 24px;
+        color: #262B36;
+        margin-bottom: 12px;
+        @extend %inter-400;
+    }
+    &__input{
+        padding: 12px 15px;
+        width: 100%;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+    }
+    &__input-textarea{
+        resize: none;
+        width: 100%;
+        padding: 12px 15px 84px;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px;
+    }
+    &__btn{
+        padding: 15px 37px;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #3ACF6E;
+        border-radius: 5px;
+        @extend %inter-700;
+        cursor: pointer;
+        &:hover{
+            background-color: #00af3d;
+        }
+    }
+}
+// Section Contacts ----- end ------------
+
+.jq-selectbox__select{
+    padding: 12px 15px;
+    width: 386px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/arrow.svg');
+        width: 12px;
+        height: 6px;
+        top: 21px;
+        right: 21px;
+    }
+}
+.jq-selectbox li{
+    margin-top: 20px;
+    &:first-child{
+        margin-top: 15px;
+    }
+}
+.jq-selectbox__dropdown{
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #CCCCCC;
+}
+
+
+
 
 
 .footer{
+    background-color: #fff;
     min-height: 547px;
     .footer-inner{
         display: flex;
